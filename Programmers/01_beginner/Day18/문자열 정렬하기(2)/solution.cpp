@@ -30,3 +30,4 @@ string solution(string my_string) {
 }
 
 //자꾸 앞에서 공부했던 함수 까먹는다
+//sort 함수는 cctype에 정의되어 있지만 string이나 algorithm에도 간접적으로 cctype이 호출되어 있어 따로 호출하지 않아도 됨
