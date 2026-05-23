@@ -153,3 +153,5 @@ int solution(vector<string> spell, vector<string> dic) {
 
     return 2;
 }
+
+//비교를 할 때는 보통 정렬하면 편하기 때문에 이 점 잘 기억해두기
