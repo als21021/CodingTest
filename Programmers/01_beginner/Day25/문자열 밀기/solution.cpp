@@ -62,3 +62,18 @@ int solution(string A, string B) {
     //한바퀴 다 밀었는데 안 끝났으면
     return -1;
 }
+
+/*
+다른 풀이
+#include <string>
+
+using namespace std;
+
+int solution(string A, string B)
+{
+    B += B;
+    return B.find(A);
+}
+
+이런 생각은 어떻게 하는건지 ㄷㄷ;
+*/
