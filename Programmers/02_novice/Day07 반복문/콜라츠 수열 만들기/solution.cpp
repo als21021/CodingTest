@@ -21,6 +21,7 @@ if n % 2 == 0 push_back(n) n /= 2
 else push_back(n) n = 3 * n + 1
 */
 
+/*
 #include <vector>
 using namespace std;
 
@@ -36,5 +37,28 @@ vector<int> solution(int n) {
     }
 
     answer.push_back(1);
+    return answer;
+}
+*/
+
+//다른 풀이
+#include <vector>
+using namespace std;
+
+void arr(int n, vector<int>& a) {
+
+    a.push_back(n);
+    if(n == 1) return;
+
+    if(n % 2 == 0) arr(n / 2, a);
+    else arr(3 * n + 1, a);
+}
+
+vector<int> solution(int n) {
+
+    vector<int> answer;
+
+    arr(n, answer);
+
     return answer;
 }
