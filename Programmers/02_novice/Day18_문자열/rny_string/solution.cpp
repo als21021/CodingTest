@@ -7,7 +7,7 @@
 문자열 rny_string이 주어질 때,
 rny_string의 모든 'm'을 "rn"으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.
 */
-s
+
 /*
 제한사항
 1 ≤ rny_string의 길이 ≤ 100
