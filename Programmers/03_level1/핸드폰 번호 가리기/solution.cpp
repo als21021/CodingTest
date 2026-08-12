@@ -20,6 +20,7 @@ string solution(string phone_number) {
         answer += '*';
     }
 
+
     answer.append(phone_number.substr(phone_number.size() - 4, 4));
     return answer;
 }
