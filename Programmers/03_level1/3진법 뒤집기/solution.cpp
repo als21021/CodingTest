@@ -37,12 +37,13 @@ n /= 3 나누고 마지막에 남은 수도 더해줘야 함
 
 #include <string>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
 int solution(int n) {
 
-    int answer;
+    int answer = 0;
     string x;
 
     while(n > 2) {
@@ -51,8 +52,13 @@ int solution(int n) {
         else x.push_back('2');
         n /= 3;
     }
-    x.push_back(n - '0');
+    x.push_back(n + '0');
+    reverse(x.begin(), x.end());
 
+    for(int i = 0; i < x.length(); i++) {
+
+        answer += pow(3, i) * (x[i] - '0');
+    }
     
-    return stoi(x);
+    return answer;
 }
